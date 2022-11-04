@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 80px;
+}
+
+/* STYLE LOGOTYPE */
+
+.logo{
+    font-weight: 600;
+    font-size: x-large;
+}
+
+/* STYLE ITEMS CONTACTS */
+
+.itemContacts{
+    display: flex;
+    align-items: center;
+}
+.itemContacts a{
+    margin-left: 20px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/* STYLE BUTTON LOGIN */
+
+.btnLogin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    user-select: none;
+}
+.btnLogin button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: medium;
+}
+.btnLogin button:hover{
+}
