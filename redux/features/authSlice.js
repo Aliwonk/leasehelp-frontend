@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const fetchUserLogin = createAsyncThunk(
   "auth/fetchUserLogin",
   async (userData) => {
-    const response = await fetch("http://localhost:3002/auth/login", {
+    const response = await fetch("http://unigi.site/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -18,7 +18,7 @@ export const fetchUserLogin = createAsyncThunk(
 export const fetchAdminLogin = createAsyncThunk(
   "auth/fetchAdminLogin",
   async (adminData) => {
-    const response = await fetch("http://localhost:3002/auth/admin/login", {
+    const response = await fetch("http://unigi.site/api/auth/admin/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -9,7 +9,7 @@ export const sendFiles = createAsyncThunk("forms/sendFiles", async (data) => {
         formData.append('files', file);
     });
     
-    const response = await fetch('http://localhost:3002/files/upload/1', {
+    const response = await fetch('http://unigi.site/api/files/upload/1', {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${token}` 
