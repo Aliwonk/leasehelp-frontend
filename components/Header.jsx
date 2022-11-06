@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import styles from '../styles/components/Header.module.css'
 import IconUser from '../assets/icons/user-circle.svg';
 import IconTelegram from '../assets/icons/telegram.svg';
 import IconWhatsUpp from '../assets/icons/whatsapp.svg';
-import { useEffect, useState } from 'react';
+import { changeToken } from '../redux/features/authSlice';
 
 export default function Header() {
-    const [token, setToken] = useState(getCookie('token'));
+    const token = useSelector(state => state.auth.token);
+    const dispatch = useDispatch();
     const [urlBtnLogin, setUrlBtnLogin] = useState('');
 
     function getCookie(name) {
@@ -15,12 +18,12 @@ export default function Header() {
         return variable ? decodeURIComponent(variable[1]) : undefined;
     }
 
-
     useEffect(() => {
 
-        token === undefined
+        token === '' || undefined
             ? setUrlBtnLogin('/auth/login')
             : setUrlBtnLogin('/profile');
+
     }, [token])
 
     return (

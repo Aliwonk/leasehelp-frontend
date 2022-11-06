@@ -1,0 +1,74 @@
+/* STYLE MAIN PAGE ADMIN */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.table p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0.5px solid black;
+    border-bottom: none;
+    border-left: none;
+    word-break: break-all;
+    font-size: clamp(14px, 2vw, 15px);
+}
+.userId {
+    width: 70px !important;
+}
+
+.tableCaptions {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 50px;
+}
+
+.tableCaptions p {
+    font-weight: 600;
+}
+
+.tableColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableValues {
+    display: flex;
+    flex-direction: row;
+}
+
+/* STYLE LOGIN PAGE ADMIN */
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.formLogin label {
+    margin-bottom: 5px;
+}
+
+.formLogin input {
+    margin-bottom: 10px;
+}
