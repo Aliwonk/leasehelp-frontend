@@ -9,7 +9,7 @@ export default function admin() {
     const [users, setUsers] = useState([{}]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/user/all', { headers: { 'Authorization': `Bearer ${token}` } })
+        fetch('http://unigi.site/api/user/all', { headers: { 'Authorization': `Bearer ${token}` } })
             .then(res => res.json())
             .then(users => {
                 console.log(users);
